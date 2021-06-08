@@ -1,5 +1,5 @@
 {
-    "name": "marc/observer",
+    "name": "mpierron/observer",
     "description": "PHP POO - Design Pattern - Observer",
     "type": "library",
     "license": "MIT",
@@ -13,12 +13,12 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Marc\\Observer\\": "src"
+            "MPierron\\Observer\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Marc\\Observer\\Tests\\": "tests"
+            "MPierron\\Observer\\Tests\\": "tests"
         }
     },
     "require-dev": {
