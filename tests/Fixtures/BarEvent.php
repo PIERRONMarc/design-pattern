@@ -4,7 +4,7 @@ namespace MPierron\Observer\Tests\Fixtures;
 
 use Psr\EventDispatcher\StoppableEventInterface;
 
-class FooEvent implements StoppableEventInterface
+class BarEvent implements StoppableEventInterface
 {
 
     public const EVENT_NAME = 'foo';
@@ -35,6 +35,6 @@ class FooEvent implements StoppableEventInterface
 
     public function isPropagationStopped(): bool
     {
-        return false;
+        return true;
     }
 }
