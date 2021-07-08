@@ -2,24 +2,32 @@
 
 namespace MPierron\Observer;
 
-use MPierron\Observer\EventDispatcherInterface;
+use Psr\EventDispatcher\EventDispatcherInterface;
+use Psr\EventDispatcher\ListenerProviderInterface;
+use Psr\EventDispatcher\StoppableEventInterface;
 
 class EventDispatcher implements EventDispatcherInterface
 {
-    /**
-     * @var array<string, array<int, EventListenerInterface>>
-     */
-    private $listeners = [];
 
-    public function dispatch(string $eventName, EventInterface $event): void
+    private $listenerProvider;
+
+    public function __construct(ListenerProviderInterface $listenerProvider)
     {
-        foreach ($this->listeners[$eventName] as $listener) {
-            $listener->listen($event);
-        }
+        $this->listenerProvider = $listenerProvider;
     }
 
-    public function attach(string $eventName, EventListenerInterface $listener): void
+    public function dispatch(object $event): void
     {
-        $this->listeners[$eventName][] = $listener;
+        foreach ($this->listenerProvider->getListenersForEvent($event) as $listener) {
+            $listener->listen($event);
+
+            if (
+                in_array(StoppableEventInterface::class, class_implements($event))
+                && $event->isPropagationStopped()
+            ) {
+                break;
+            }
+
+        }
     }
 }
