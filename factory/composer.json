@@ -1,0 +1,23 @@
+{
+    "name": "mpierron/factory",
+    "description": "PHP POO - Design Pattern - Factory & Abstract factory",
+    "authors": [
+        {
+            "name": "PIERRON Marc",
+            "email": "pierronmarc@outlook.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MPierron\\Factory\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MPierron\\Factory\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}

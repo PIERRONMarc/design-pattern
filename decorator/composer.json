@@ -1,0 +1,23 @@
+{
+    "name": "mpierron/decorator",
+    "description": "PHP POO - Design Pattern - Decorator",
+    "authors": [
+        {
+            "name": "PIERRON Marc",
+            "email": "pierronmarc@outlook.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MPierron\\Decorator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MPierron\\Decorator\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}

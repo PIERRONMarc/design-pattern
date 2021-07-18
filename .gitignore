@@ -1,3 +1,4 @@
-/vendor/
-/var/
+*/vendor/
+*/var/
 *cache
+*DS_Store
