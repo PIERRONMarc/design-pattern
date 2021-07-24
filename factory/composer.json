@@ -9,7 +9,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "MPierron\\Factory\\": "src"
+            "MPierron\\Factory\\": "src/Factory",
+            "MPierron\\Product\\": "src/Product"
         }
     },
     "autoload-dev": {
