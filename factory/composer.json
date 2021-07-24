@@ -10,7 +10,9 @@
     "autoload": {
         "psr-4": {
             "MPierron\\Factory\\": "src/Factory",
-            "MPierron\\Product\\": "src/Product"
+            "MPierron\\ConcreteFactory\\": "src/ConcreteFactory",
+            "MPierron\\Product\\": "src/Product",
+            "MPierron\\ConcreteProduct\\": "src/ConcreteProduct"
         }
     },
     "autoload-dev": {

@@ -1,6 +1,8 @@
 <?php
 
-namespace MPierron\Product;
+namespace MPierron\ConcreteProduct;
+
+use MPierron\Product\Car;
 
 class Megane extends Car 
 {

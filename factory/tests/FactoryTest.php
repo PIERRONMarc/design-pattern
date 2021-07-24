@@ -2,12 +2,12 @@
 
 namespace MPierron\Factory\Tests;
 
-use MPierron\Product\Clio;
-use MPierron\Product\Megane;
-use MPierron\Factory\Renault;
 use PHPUnit\Framework\TestCase;
+use MPierron\ConcreteProduct\Clio;
+use MPierron\ConcreteProduct\Megane;
+use MPierron\ConcreteFactory\Renault;
 
-class RaceTest extends TestCase {
+class FactoryTest extends TestCase {
 
     public function testFactoryPattern()
     {

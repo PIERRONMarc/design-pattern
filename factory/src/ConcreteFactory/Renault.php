@@ -1,10 +1,11 @@
 <?php
 
-namespace MPierron\Factory;
+namespace MPierron\ConcreteFactory;
 
 use MPierron\Product\Car;
-use MPierron\Product\Clio;
-use MPierron\Product\Megane;
+use MPierron\ConcreteProduct\Clio;
+use MPierron\ConcreteProduct\Megane;
+use MPierron\Factory\CarConstructor;
 
 class Renault extends CarConstructor 
 {
