@@ -1,0 +1,23 @@
+{
+    "name": "mpierron/singleton",
+    "description": "PHP POO - Design Pattern - Singleton",
+    "authors": [
+        {
+            "name": "PIERRON Marc",
+            "email": "pierronmarc@outlook.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MPierron\\Singleton\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MPierron\\Singleton\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
