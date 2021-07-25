@@ -6,6 +6,8 @@ use MPierron\Product\Car;
 use MPierron\ConcreteProduct\Clio;
 use MPierron\ConcreteProduct\Megane;
 use MPierron\Factory\CarConstructor;
+use MPierron\ConcreteFactory\ClioParts;
+use MPierron\ConcreteFactory\MeganeParts;
 
 class Renault extends CarConstructor 
 {
@@ -13,10 +15,10 @@ class Renault extends CarConstructor
     {
         switch ($car) {
             case Megane::class:
-                return new Megane();
+                return new Megane(new MeganeParts());
                 break;
             case Clio::class:
-                return new Clio();
+                return new Clio(new ClioParts());
                 break;
             
             default:

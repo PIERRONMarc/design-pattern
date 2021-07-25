@@ -10,6 +10,7 @@
     "autoload": {
         "psr-4": {
             "MPierron\\Factory\\": "src/Factory",
+            "MPierron\\AbstractFactory\\": "src/AbstractFactory",
             "MPierron\\ConcreteFactory\\": "src/ConcreteFactory",
             "MPierron\\Product\\": "src/Product",
             "MPierron\\ConcreteProduct\\": "src/ConcreteProduct"

@@ -2,6 +2,7 @@
 
 namespace MPierron\ConcreteProduct;
 
+use MPierron\Factory\CarParts;
 use MPierron\Product\Car;
 
 class Megane extends Car 
