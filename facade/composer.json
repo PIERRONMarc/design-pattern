@@ -1,0 +1,23 @@
+{
+    "name": "mpierron/facade",
+    "description": "PHP POO - Design Pattern - Facade",
+    "authors": [
+        {
+            "name": "PIERRON Marc",
+            "email": "pierronmarc@outlook.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Facade\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
