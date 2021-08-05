@@ -1,0 +1,23 @@
+{
+    "name": "mpierron/design-pattern-strategy",
+    "description": "PHP POO - Design Pattern Strategy",
+    "authors": [
+        {
+            "name": "PIERRON Marc",
+            "email": "pierronmarc@outlook.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
